@@ -18,9 +18,9 @@ public class ExamenEmployeeBuilderr {
         Employee emp1;
         Employee emp2;
         
-        emp1 = new EmployeeBuilder("Gabriel", 111222333).setBirthDate(18).setBirthMonth(9).setBirthYear(1995).createEmployee();
+        emp1 = new EmployeeBuilder("Pepe", 111222333).setBirthDate(23).setBirthMonth(11).setBirthYear(1998).createEmployee();
 
-        emp2 = new EmployeeBuilder("karla", 222333444).setBirthDate(17).setBirthMonth(8).setBirthYear(1995).createEmployee();
+        emp2 = new EmployeeBuilder("Jesus", 222333444).setBirthDate(03).setBirthMonth(06).setBirthYear(2001).createEmployee();
         
         System.out.println(emp1.toString());
         System.out.println(emp2.toString());
