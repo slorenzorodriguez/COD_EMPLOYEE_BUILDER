@@ -12,90 +12,70 @@ package examenemployeebuilderr;
 public class EmployeeBuilder {
     //Parámetros Establecemos los parámetros que nuestro objeto pueda tener. Los atributos obligatorios para el objeto deben ser final.
     private String lastName;
-   private String middleName;
-   private final String firstName;
-   private final long id;
-   private int birthYear;
-   private int birthMonth;
-   private int birthDate;
-   private int hireYear;
-   private int hireMonth;
-   private int hireDate;
+    private String middleName;
+    private String firstName;
+    private long id;
+    private int birthYear;
+    private int birthMonth;
+    private int birthDate;
+    private int hireYear;
+    private int hireMonth;
+    private int hireDate;
 
-   // Constructor con los atributos obligatorios.
     public EmployeeBuilder(final String firstName, final long id) {
-        this.firstName = firstName;
-        this.id = id;
-    }
-  // Getters/Setters de los demás atributos para obtener los datos. 
-    public String getLastName() {
-        return lastName;
     }
 
-    public void setLastName(String lastName) {
+    public EmployeeBuilder setLastName(String lastName) {
         this.lastName = lastName;
+        return this;
     }
 
-    public String getMiddleName() {
-        return middleName;
-    }
-
-    public void setMiddleName(String middleName) {
+    public EmployeeBuilder setMiddleName(String middleName) {
         this.middleName = middleName;
+        return this;
     }
 
-    public int getBirthYear() {
-        return birthYear;
+    public EmployeeBuilder setFirstName(String firstName) {
+        this.firstName = firstName;
+        return this;
     }
 
-    public void setBirthYear(int birthYear) {
+    public EmployeeBuilder setId(long id) {
+        this.id = id;
+        return this;
+    }
+
+    public EmployeeBuilder setBirthYear(int birthYear) {
         this.birthYear = birthYear;
+        return this;
     }
 
-    public int getBirthMonth() {
-        return birthMonth;
-    }
-
-    public void setBirthMonth(int birthMonth) {
+    public EmployeeBuilder setBirthMonth(int birthMonth) {
         this.birthMonth = birthMonth;
+        return this;
     }
 
-    public int getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(int birthDate) {
+    public EmployeeBuilder setBirthDate(int birthDate) {
         this.birthDate = birthDate;
+        return this;
     }
 
-    public int getHireYear() {
-        return hireYear;
-    }
-
-    public void setHireYear(int hireYear) {
+    public EmployeeBuilder setHireYear(int hireYear) {
         this.hireYear = hireYear;
+        return this;
     }
 
-    public int getHireMonth() {
-        return hireMonth;
-    }
-
-    public void setHireMonth(int hireMonth) {
+    public EmployeeBuilder setHireMonth(int hireMonth) {
         this.hireMonth = hireMonth;
+        return this;
     }
 
-    public int getHireDate() {
-        return hireDate;
-    }
-
-    public void setHireDate(int hireDate) {
+    public EmployeeBuilder setHireDate(int hireDate) {
         this.hireDate = hireDate;
+        return this;
     }
-    
-    //CreateEmployee estableciendo qué devolverá el objeto creado, en este caso devolverá todos los atributos se haya establecido o no valor para ellos. 
-    public Employee createEmployee(){
-        return new Employee (lastName, middleName,firstName,id,birthYear,birthMonth,birthDate,hireYear,hireMonth,hireDate);
+
+    public Employee createEmployee() {
+        return new Employee(lastName, middleName, firstName, id, birthYear, birthMonth, birthDate, hireYear, hireMonth, hireDate);
     }
-   
-   
 }

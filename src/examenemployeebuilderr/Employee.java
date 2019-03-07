@@ -47,7 +47,7 @@ public class Employee {
       this.hireDate = newHireDate;
    }
 
-   //Creamos el toStrin el cual será lo que nos devuelva el objeto que creamos.
+   //Creamos el toString el cual será lo que nos devuelva el objeto que creamos.
     @Override
     public String toString() {
         return "Employee: " + "Last Name = " + lastName + ", Middle Name = "  + middleName + ", First Name = "  + firstName + ", ID = " + id + ", Birth Year = " + birthYear + ", Birth Month = " + birthMonth + ", Birth Date = " + birthDate + ", Hire Year = " + hireYear + ", Hire Month = " + hireMonth + ", Hire Date = " + hireDate;

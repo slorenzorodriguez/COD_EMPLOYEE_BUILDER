@@ -15,26 +15,22 @@ public class ExamenEmployeeBuilderr {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Employee emp1;
+        Employee emp2;
         
-        //Instanciamos uno o varios objetos; en ellos, se establecen el o los valores obligatorios.
-        EmployeeBuilder emp1 = new EmployeeBuilder("Pepe", 12123123);
-        EmployeeBuilder emp2 = new EmployeeBuilder("Jesus", 32323232);
+        emp1 = new EmployeeBuilder("Gabriel", 111222333).setBirthDate(18).setBirthMonth(9).setBirthYear(1995).createEmployee();
+
+        emp2 = new EmployeeBuilder("karla", 222333444).setBirthDate(17).setBirthMonth(8).setBirthYear(1995).createEmployee();
         
-        //Con los Setters hechos en la clase Builder; establecemos al objeto creado los atriutos no obligatorios que queramos otorgarle.
-        emp1.setMiddleName("Perez");
-        emp1.setLastName("Alvarez");
-        emp1.createEmployee();
-        
-        emp2.setMiddleName("Rodriguez");
-        emp2.setLastName("Rodriguez");
-        emp2.setBirthYear(1998);
-        emp2.setBirthMonth(04);
-        emp2.setBirthDate(13);
-        emp2.createEmployee();
-        
-        //Mensaje a mostrar en consola con el objeto creado.
-        System.out.println(emp1.createEmployee());
-        System.out.println(emp2.createEmployee());
+        System.out.println(emp1.toString());
+        System.out.println(emp2.toString());
     }
-    
+        
+        
+        
+        
+        
+        
+        
+
 }
